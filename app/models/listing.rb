@@ -15,4 +15,6 @@ class Listing < ActiveRecord::Base
 	validates :price, numericality: { greater_than: 0 }
 	validates :image, :attachment_presence => true
 
+	belongs_to :user
+
 end
